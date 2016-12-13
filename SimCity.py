@@ -9,7 +9,7 @@ mc = Minecraft.create()
 
 #Create dictionary of blocks
 
-buildingblocks = {'air':0,'cobblestone':4,'diamond':57,'road':44, 'sandstone':24, 'water:8'}
+buildingblocks = {'air':0,'cobblestone':4,'diamond':57,'road':44, 'sandstone':24, 'water':8}
 #Define Functions
 
 #Destroy The World
