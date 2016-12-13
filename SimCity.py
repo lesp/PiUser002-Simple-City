@@ -16,7 +16,7 @@ buildingblocks = {'air':0,'cobblestone':4,'diamond':57,'road':44, 'sandstone':24
 
 def destroy():
 	pos = mc.player.getTilePos()
-	mc.setBocks(pos.x, pos.y, pos.z,, pos.x+50, pos.y+50, pos.z+0, buildingblocks['air'])
+	mc.setBocks(pos.x, pos.y, pos.z, pos.x+50, pos.y+50, pos.z+0, buildingblocks['air'])
 
 #Create a skyscraper
 
