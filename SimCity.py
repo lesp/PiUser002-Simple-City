@@ -1,5 +1,5 @@
 #Import libraries
-import mcpi.minecraft as Minecraft
+from mcpi.minecraft import Minecraft
 from random import randint
 from time import sleep
 mc = Minecraft.create()
