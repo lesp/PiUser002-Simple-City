@@ -34,11 +34,10 @@ def road(direction):
     pos = mc.player.getTilePos()
     x,y,z = pos.x, pos.y, pos.z
     width = 6
-    height = 6
     length = 100
     if direction == "north":
         mc.setBlocks(x, y, z, x+width, y, z+length, buildingblocks['road'])
-    else:
+    elif direction == "east":
         mc.setBlocks(x-1, y-1, z-1, x+length, y,z+width, buildingblocks['road'])
 
 def river(direction):
@@ -50,7 +49,7 @@ def river(direction):
     length = randint(1,100)
     if direction == "north":
             mc.setBlocks(x, y, z, x+width, y-depth, z+length, buildingblocks['water'])
-    else:
+    elif direction == "east":
             mc.setBlocks(x, y, z, x+length, y-depth, z+width, buildingblocks['water'])
     
 mc.postToChat('Welcome to our Simple City.')
@@ -67,7 +66,7 @@ while answer != "8":
               '6: Create a river, east to west\n'
               '7: Destroy a 50 cubed area around you\n'
               '8: Exit the menu')
-        answer = input('What would you lke to do? ')
+        answer = input('What would you like to do? ')
 
         if answer == '1':
                 skyscraper()
@@ -85,6 +84,7 @@ while answer != "8":
                 destroy()
         else:
                 print('Goodbye')
+                mc.postToChat('Exiting menu, connection terminated')
                 break
 
 
